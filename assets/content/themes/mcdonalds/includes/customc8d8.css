@@ -912,7 +912,7 @@ body .menu-section:before{
 }
 
 body .menu-section:before{
-	background: url('../../../uploads/2019/12/m.svg') center right/contain no-repeat;
+	background: url('../../../uploads/2019/12/m.png') center right/contain no-repeat;
 }
 
 body .menu-section .menu-slider .menu-slider-navigation{
@@ -1816,7 +1816,7 @@ body .news-section:after{
 }
 
 body .news-section.section-loaded:after{
-	background: url(../../../uploads/2019/12/news-bg.jpg) center/cover no-repeat;
+	background: url(../../../uploads/2019/12/news-bg.png) center/cover no-repeat;
 }
 
 body .news-section .row-1{
@@ -1846,7 +1846,7 @@ body .news-section .row-1 .col-1:before{
 }
 
 body .news-section.section-loaded .row-1 .col-1:before{
-	background: url('../../../uploads/2019/12/pattern-2.jpg') center/cover no-repeat;
+	background: url('../../../uploads/2019/12/pattern-2.png') center/cover no-repeat;
 }
 
 body .news-section .row-1 .col-2{
@@ -2976,7 +2976,7 @@ body #mk-footer .col-2 .para-text .main-text:before{
 }
 
 body #mk-footer .col-2 .para-text .main-text:before{
-	background: url(../../../uploads/2019/12/m-logo.svg) center/cover no-repeat;
+	background: url(../../../uploads/2019/12/m1.png) center/cover no-repeat;
 }
 
 body #mk-footer .col-2 .para-text p.main-text{
@@ -3795,7 +3795,7 @@ body.birthday-page .icons-section .mk-page-section-inner:after{
 	left: 0%;
 	width: 100%;
 	height: 88%;
-	background: url(../../../uploads/2019/12/news-bg.jpg) top 120px center/cover no-repeat;
+	background: url(../../../uploads/2019/12/news-bg.png) top 120px center/cover no-repeat;
 	-webkit-transform: rotateY(-180deg);
 	        transform: rotateY(-180deg);
 }
