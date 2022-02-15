@@ -83,7 +83,7 @@
 }
 
 #mk-footer .widget:not(.widget_social_networks) a:hover {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 .mk-footer-copyright, #mk-footer-navigation li a {
@@ -134,11 +134,11 @@ a {
 }
 
 a:hover {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 .master-holder strong {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 .master-holder h1 {
@@ -431,16 +431,16 @@ a:hover {
 }
 
 .menu-hover-style-1 .main-navigation-ul>li.menu-item>a.menu-item-link:hover, .menu-hover-style-1 .main-navigation-ul>li.menu-item:hover>a.menu-item-link, .menu-hover-style-1 .main-navigation-ul>li.current-menu-item>a.menu-item-link, .menu-hover-style-1 .main-navigation-ul>li.current-menu-ancestor>a.menu-item-link, .menu-hover-style-2 .main-navigation-ul>li.menu-item>a.menu-item-link:hover, .menu-hover-style-2 .main-navigation-ul>li.menu-item:hover>a.menu-item-link, .menu-hover-style-2 .main-navigation-ul>li.current-menu-item>a.menu-item-link, .menu-hover-style-2 .main-navigation-ul>li.current-menu-ancestor>a.menu-item-link, .menu-hover-style-1.mk-vm-menuwrapper li.menu-item>a:hover, .menu-hover-style-1.mk-vm-menuwrapper li.menu-item:hover>a, .menu-hover-style-1.mk-vm-menuwrapper li.current-menu-item>a, .menu-hover-style-1.mk-vm-menuwrapper li.current-menu-ancestor>a, .menu-hover-style-2.mk-vm-menuwrapper li.menu-item>a:hover, .menu-hover-style-2.mk-vm-menuwrapper li.menu-item:hover>a, .menu-hover-style-2.mk-vm-menuwrapper li.current-menu-item>a, .menu-hover-style-2.mk-vm-menuwrapper li.current-menu-ancestor>a {
-    color: #db0007 !important;
+    color: #ffdd24 !important;
 }
 
 .menu-hover-style-3 .main-navigation-ul>li.menu-item>a.menu-item-link:hover, .menu-hover-style-3 .main-navigation-ul>li.menu-item:hover>a.menu-item-link, .menu-hover-style-3.mk-vm-menuwrapper li>a:hover, .menu-hover-style-3.mk-vm-menuwrapper li:hover>a, .menu-hover-style-3 .main-navigation-ul>li.menu-item:hover>a.menu-item-link {
-    border: 2px solid #db0007;
+    border: 2px solid #ffdd24;
 }
 
 .menu-hover-style-3 .main-navigation-ul>li.current-menu-item>a.menu-item-link, .menu-hover-style-3 .main-navigation-ul>li.current-menu-ancestor>a.menu-item-link, .menu-hover-style-3.mk-vm-menuwrapper li.current-menu-item>a, .menu-hover-style-3.mk-vm-menuwrapper li.current-menu-ancestor>a {
-    border: 2px solid #db0007;
-    background-color: #db0007;
+    border: 2px solid #ffdd24;
+    background-color: #ffdd24;
     color: #fff;
 }
 
@@ -449,7 +449,7 @@ a:hover {
 }
 
 .menu-hover-style-4 .main-navigation-ul li.menu-item>a.menu-item-link:hover, .menu-hover-style-4 .main-navigation-ul li.menu-item:hover>a.menu-item-link, .menu-hover-style-4 .main-navigation-ul li.current-menu-item>a.menu-item-link, .menu-hover-style-4 .main-navigation-ul li.current-menu-ancestor>a.menu-item-link, .menu-hover-style-4.mk-vm-menuwrapper li a:hover, .menu-hover-style-4.mk-vm-menuwrapper li:hover>a, .menu-hover-style-4.mk-vm-menuwrapper li.current-menu-item>a, .menu-hover-style-4.mk-vm-menuwrapper li.current-menu-ancestor>a, .menu-hover-style-5 .main-navigation-ul>li.menu-item>a.menu-item-link:after {
-    background-color: #db0007;
+    background-color: #ffdd24;
     color: #fff;
 }
 
@@ -458,11 +458,11 @@ a:hover {
 }
 
 .menu-hover-style-1 .main-navigation-ul>li.dropdownOpen>a.menu-item-link, .menu-hover-style-1 .main-navigation-ul>li.active>a.menu-item-link, .menu-hover-style-1 .main-navigation-ul>li.open>a.menu-item-link, .menu-hover-style-1 .main-navigation-ul>li.menu-item>a:hover, .menu-hover-style-1 .main-navigation-ul>li.current-menu-item>a.menu-item-link, .menu-hover-style-1 .main-navigation-ul>li.current-menu-ancestor>a.menu-item-link {
-    border-top-color: #db0007;
+    border-top-color: #ffdd24;
 }
 
 .menu-hover-style-1.mk-vm-menuwrapper li>a:hover, .menu-hover-style-1.mk-vm-menuwrapper li.current-menu-item>a, .menu-hover-style-1.mk-vm-menuwrapper li.current-menu-ancestor>a {
-    border-left-color: #db0007;
+    border-left-color: #ffdd24;
 }
 
 .header-style-1 .menu-hover-style-3 .main-navigation-ul>li>a.menu-item-link {
@@ -479,7 +479,7 @@ a:hover {
 }
 
 .mk-main-navigation li.no-mega-menu ul.sub-menu, .mk-main-navigation li.has-mega-menu>ul.sub-menu, .mk-shopping-cart-box {
-    /* background-color: #ffbc0d; */
+    /* background-color: #11a3ba; */
     background-color: #11a3ba;
 
 }
@@ -536,11 +536,11 @@ a:hover {
 }
 
 .mk-search-trigger:hover, .mk-header-start-tour:hover {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 .mk-search-trigger:hover .mk-svg-icon, .mk-header-start-tour:hover .mk-svg-icon {
-    fill: #db0007;
+    fill: #ffdd24;
 }
 
 .main-navigation-ul li.menu-item ul.sub-menu li.menu-item a.menu-item-link {
@@ -559,11 +559,11 @@ a:hover {
 }
 
 .main-navigation-ul>li.no-mega-menu>ul.sub-menu:after, .main-navigation-ul>li.has-mega-menu>ul.sub-menu:after {
-    background-color: #db0007;
+    background-color: #ffdd24;
 }
 
 .mk-shopping-cart-box {
-    border-top: 2px solid #db0007;
+    border-top: 2px solid #ffdd24;
 }
 
 @media handheld, only screen and (max-width:1140px) {
@@ -979,7 +979,7 @@ a:hover {
 }
 
 .mk-side-dashboard .widget:not(.widget_social_networks) a:hover {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 #mk-sidebar, #mk-sidebar p {
@@ -1004,56 +1004,56 @@ a:hover {
 }
 
 #mk-sidebar .widget:not(.widget_social_networks) a:hover {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 .mk-testimonial-author, .modern-style .mk-testimonial-company, #wp-calendar td#today, .news-full-without-image .news-categories span, .news-half-without-image .news-categories span, .news-fourth-without-image .news-categories span, .mk-read-more, .news-single-social li a, .portfolio-carousel-cats, .blog-showcase-more, .simple-style .mk-employee-item:hover .team-member-position, .mk-portfolio-classic-item .portfolio-categories a, .register-login-links a:hover, .not-found-subtitle, .mk-mini-callout a, .search-loop-meta a, .mk-tooltip a:hover, .new-tab-readmore, .mk-news-tab .mk-tabs-tabs li.is-active a, .mk-woo-tabs .mk-tabs-tabs li.ui-state-active a, .monocolor.pricing-table .pricing-price span, .quantity .plus:hover, .quantity .minus:hover, .blog-modern-comment:hover, .blog-modern-share:hover {
-    color: #db0007;
+    color: #ffdd24;
 }
 
 .mk-tabs .mk-tabs-tabs li.is-active a>i, .mk-accordion .mk-accordion-single.current .mk-accordion-tab:before, .widget_testimonials .testimonial-slider .testimonial-author, #mk-filter-portfolio li a:hover, #mk-language-navigation ul li a:hover, #mk-language-navigation ul li.current-menu-item>a, .mk-quick-contact-wrapper h4, .divider-go-top:hover i, .widget-sub-navigation ul li a:hover, #mk-footer .widget_posts_lists ul li .post-list-meta time, .mk-footer-tweets .tweet-username, .product-category .item-holder:hover h4 {
-    color: #db0007 !important;
+    color: #ffdd24 !important;
 }
 
 .accent-bg-color, .image-hover-overlay, .newspaper-portfolio, .similar-posts-wrapper .post-thumbnail:hover>.overlay-pattern, .portfolio-logo-section, .post-list-document .post-type-thumb:hover, #cboxTitle, #cboxPrevious, #cboxNext, #cboxClose, .comment-form-button, .mk-dropcaps.fancy-style, .mk-image-overlay, .pinterest-item-overlay, .news-full-with-image .news-categories span, .news-half-with-image .news-categories span, .news-fourth-with-image .news-categories span, .widget-portfolio-overlay, .portfolio-carousel-overlay, .blog-carousel-overlay, .mk-blog-classic-item .blog-loop-comments span, .mk-similiar-overlay, .mk-skin-button, .mk-flex-caption .flex-desc span, .mk-icon-box .mk-icon-wrapper i:hover, .mk-quick-contact-link:hover, .quick-contact-active.mk-quick-contact-link, .mk-fancy-table th, .ui-slider-handle, .widget_price_filter .ui-slider-range, #review_form_wrapper input[type=submit], #mk-nav-search-wrapper form .nav-side-search-icon:hover, form.ajax-search-complete i, .blog-modern-btn, .showcase-blog-overlay, .gform_button[type=submit], .single_add_to_cart_button, .button.checkout-button, .woocommerce #payment #place_order, #respond #submit, .widget_price_filter .price_slider_amount .button, .widget_shopping_cart .button.checkout {
-    background-color: #db0007 !important;
+    background-color: #ffdd24 !important;
 }
 
 .a_accent-bg-hover:hover {
-    background-color: #db0007;
+    background-color: #ffdd24;
 }
 
 ::-webkit-selection {
-    background-color: #db0007;
+    background-color: #ffdd24;
     color: #fff;
 }
 
 ::-moz-selection {
-    background-color: #db0007;
+    background-color: #ffdd24;
     color: #fff;
 }
 
 ::selection {
-    background-color: #db0007;
+    background-color: #ffdd24;
     color: #fff;
 }
 
 .mk-circle-image .item-holder {
-    -webkit-box-shadow: 0 0 0 1px #db0007;
-    -moz-box-shadow: 0 0 0 1px #db0007;
-    box-shadow: 0 0 0 1px #db0007;
+    -webkit-box-shadow: 0 0 0 1px #ffdd24;
+    -moz-box-shadow: 0 0 0 1px #ffdd24;
+    box-shadow: 0 0 0 1px #ffdd24;
 }
 
 .mk-blockquote.line-style, .bypostauthor>.mk-single-comment .comment-content, .bypostauthor>.mk-single-comment .comment-content:after, .mk-tabs.simple-style .mk-tabs-tabs li.is-active a {
-    border-color: #db0007 !important;
+    border-color: #ffdd24 !important;
 }
 
 .news-full-with-image .news-categories span, .news-half-with-image .news-categories span, .news-fourth-with-image .news-categories span, .mk-flex-caption .flex-desc span {
-    box-shadow: 8px 0 0 #db0007, -8px 0 0 #db0007;
+    box-shadow: 8px 0 0 #ffdd24, -8px 0 0 #ffdd24;
 }
 
 .monocolor.pricing-table .pricing-cols .pricing-col.featured-plan {
-    border: 1px solid #db0007 !important;
+    border: 1px solid #ffdd24 !important;
 }
 
 .mk-skin-button.three-dimension {
