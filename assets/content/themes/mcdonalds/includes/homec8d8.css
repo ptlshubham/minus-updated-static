@@ -200,7 +200,7 @@ body .mega-main-heading h1{
 
 body .main-heading h1{
 	font-size: 48px;
-	line-height: 110%;
+	line-height: 100%;
 	color: #fff;
 	font-weight: 700;
 	letter-spacing: 0px;
@@ -240,10 +240,11 @@ body #mk-footer .sub-heading-4 h2{
 
 body .para-text p,
 body #mk-footer .para-text p{
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 140%;
 	color: #11a3ba;
 	font-weight: 400;
+	text-align: justify;
 }
 
 body #mk-theme-container strong{
@@ -649,7 +650,7 @@ body .first-fold-section .first-fold-slider .slider-row .col-1 .main-heading{
 
 body .first-fold-section .first-fold-slider .slider-row .col-1 .main-heading h1{
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	height: 100%;
 	width: 100%;
 	-webkit-transform: translateY(-50%);
@@ -3473,7 +3474,7 @@ body .instagram-section .instagram-feed-shortcode .row-1 .col-1{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: calc(32% + 167px);
+	width: calc(32% + 176px);
 	background:  #11a3ba;
 	flex-wrap: wrap;
 }
@@ -3793,7 +3794,7 @@ body .happymeal-app-section .happymeal-app-row .cards-col .cards-row .card-text 
 		padding: 15px;
 		padding-top: 35px;
 		padding-bottom: 10px;
-		min-height: 190px;
+		min-height: 80px;
 	}
 
 	body .news-section .news-grid-element .mk-blog-meta .post-title p,
@@ -4268,7 +4269,8 @@ and (max-device-width : 1024px) {
 
 	body header.mk-header .mk-nav-responsive-link{
         padding: 15px;
-        background: #ffdd24;
+        /* background: #ffdd24; */
+		background: transparent;
         padding-bottom: 25px;
         top: 30px;
         right: 0px;
@@ -4286,12 +4288,12 @@ and (max-device-width : 1024px) {
     }
 
     body header.mk-header .mk-nav-responsive-link.is-active:after{
-        content:'CLOSE';
+        /* content:'CLOSE'; */
     }
 
     body header.mk-header .mk-nav-responsive-link:after{
         position: absolute;
-        content:'MENU';
+        /* content:'MENU'; */
         font-size: 12px;
         color: #fff;
         bottom: 8px;
@@ -4328,12 +4330,12 @@ and (max-device-width : 1024px) {
 	}
 
 	body .logo-is-responsive .mk-resposnive-logo{
-		width: 52px;
+		width: 140px;
 	}
 
 	body header.mk-header .mk-nav-responsive-link svg{
 		width: 55px;
-		height: 20px;
+		height: 40px;
 		position: absolute;
 		top: 8px;
 		left: 50%;
@@ -4350,7 +4352,7 @@ and (max-device-width : 1024px) {
     }
 
     body header .mk-header-bg{
-        background: #fff;
+        background: #11a3ba;
         -webkit-transform: translateX(-100%);
             -ms-transform: translateX(-100%);
                 transform: translateX(-100%);
@@ -4626,6 +4628,7 @@ and (orientation : portrait) {
 
 	body .first-fold-section .main-heading h1{
 		font-size: 44px;
+		top: 50% !important;
 	}
 
 	body .main-heading h1{
@@ -4675,7 +4678,8 @@ and (orientation : portrait) {
 	body #mk-theme-container header.mk-header .mk-nav-responsive-link{
 		position: absolute;
 		padding: 10px;
-		background: #ffdd24;
+		/* background: #ffdd24; */
+		background: transparent;
 		padding-bottom: 24px;
 		top: 32px;
 		right: 0px;
@@ -4690,12 +4694,12 @@ and (orientation : portrait) {
 	}
 
 	body .logo-is-responsive .mk-resposnive-logo{
-		width: 52px;
+		width: 125px;
 	}
 
 	body header.mk-header .mk-nav-responsive-link svg{
 		width: 55px;
-		height: 20px;
+		height: 30px;
 		position: absolute;
 		top: 8px;
 		left: 50%;
@@ -4718,12 +4722,12 @@ and (orientation : portrait) {
     }
 
     body header.mk-header .mk-nav-responsive-link.is-active:after{
-        content:'CLOSE';
+        /* content:'CLOSE'; */
     }
 
     body header.mk-header .mk-nav-responsive-link:after{
         position: absolute;
-        content:'MENU';
+        /* content:'MENU'; */
         font-size: 9px;
         color: #fff;
         bottom: 8px;
@@ -4766,7 +4770,7 @@ and (orientation : portrait) {
     }
 
     body header .mk-header-bg{
-        background: #fff;
+        background: #11a3ba;
         -webkit-transform: translateX(-100%);
             -ms-transform: translateX(-100%);
                 transform: translateX(-100%);
@@ -4865,9 +4869,9 @@ and (orientation : portrait) {
 
 	body .first-fold-section .first-fold-slider .slider-row .col-1 .slide-nav-container .slide-nav-arrows{
 		position: relative;
-		top: 0;
+		top: 45px;
 		left: 0px;
-		justify-content: flex-start
+		justify-content: center
 	}
 
 	/* 	Menu Section CSS */
@@ -5209,7 +5213,7 @@ and (orientation : portrait) {
     body #mk-theme-container .subscribe-section .gform_wrapper ul.gform_fields li.gfield input{
     	margin-bottom: 0;
     	border-radius: 45px 45px 0px 0px;
-    	width: 100%;
+    	width: 60%;
     }
 
     body .subscribe-section .gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit]{
