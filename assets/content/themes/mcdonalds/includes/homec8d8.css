@@ -244,7 +244,7 @@ body #mk-footer .para-text p{
 	line-height: 140%;
 	color: #11a3ba;
 	font-weight: 400;
-	text-align: justify;
+	/* text-align: justify; */
 }
 
 body #mk-theme-container strong{
@@ -1579,9 +1579,9 @@ body .mcdelivery-section .row-1 .col-1 .vc_column-inner:before{
 	width: 100px;
 }
 
-body .mcdelivery-section.section-loaded .row-1 .col-1 .vc_column-inner:before{
+/* body .mcdelivery-section.section-loaded .row-1 .col-1 .vc_column-inner:before{
 	background: url('../../../uploads/2019/12/mcdelivery.gif') center/contain no-repeat;
-}
+} */
 
 body .mcdelivery-section .mk-page-section-inner:after{
 	position: absolute;
@@ -3475,7 +3475,7 @@ body .instagram-section .instagram-feed-shortcode .row-1 .col-1{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: calc(32% + 123px);
+	width: calc(32% + 167px);
 	background:  #11a3ba;
 	flex-wrap: wrap;
 }
@@ -4633,7 +4633,7 @@ and (orientation : portrait) {
 	}
 
 	body .main-heading h1{
-		font-size: 30px;
+		font-size: 27px;
 	}
 
 	body .sub-heading h2,
@@ -4870,7 +4870,7 @@ and (orientation : portrait) {
 
 	body .first-fold-section .first-fold-slider .slider-row .col-1 .slide-nav-container .slide-nav-arrows{
 		position: relative;
-		top: 45px;
+		top: 35px;
 		left: 0px;
 		justify-content: center
 	}
@@ -5159,8 +5159,8 @@ and (orientation : portrait) {
     }
 
     body .store-selector .select-store-element:after{
-    	right: -160px;
-    	top: -160px;
+    	right: -128px;
+    	top: -109px;
     	width: 300px;
     	-webkit-transform: translateX(-50%);
     	    -ms-transform: translateX(-50%);

@@ -34,6 +34,7 @@ jQuery(function ($) {
     $('body header.mk-header .mk-nav-responsive-link').prepend('<svg xmlns="http://www.w3.org/2000/svg" width="64" height="45" viewBox="0 0 64 45"><g id="Group_430" data-name="Group 430" transform="translate(-338 620)"><path id="Path_5" data-name="Path 5" d="M402-596H370.5c-6.1,0-7.993,3-10.737,3-3.29,0-5.376-3-10.064-3-3.434,0-4.494,1.688-6.034,1.688-1.863,0-3.018-1.688-5.666-1.688" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/><path id="Path_3996" data-name="Path 3996" d="M341.852-585.471v1.8a7.2,7.2,0,0,0,7.2,7.2h39.6a7.2,7.2,0,0,0,7.2-7.2v-1.8" transform="translate(1.148 0.471)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/><path id="Path_3997" data-name="Path 3997" d="M396.756-605c-4.673-7.827-14.958-13.987-27-14s-22.328,6.173-27,14" transform="translate(0.244)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/></g></svg>');
 });
 
+
 // Load Fast JS
 jQuery(function ($) {
     $('body .mk-page-section').each(function () {

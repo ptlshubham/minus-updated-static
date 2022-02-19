@@ -2217,7 +2217,7 @@ p.demo_store {
 }
 
 .header-style-1.header-align-left .mk-grid .mk-header-nav-container {
-    margin-right: 0
+    margin-right: -105px;
 }
 
 .header-style-1.header-align-left.boxed-header .mk-header-right {
