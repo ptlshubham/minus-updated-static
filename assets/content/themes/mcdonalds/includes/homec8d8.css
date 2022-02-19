@@ -44,7 +44,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #ffdd24;
+	background: #fff;
 	border-radius: 40px;
 }
 
@@ -240,7 +240,7 @@ body #mk-footer .sub-heading-4 h2{
 
 body .para-text p,
 body #mk-footer .para-text p{
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 140%;
 	color: #11a3ba;
 	font-weight: 400;
@@ -984,7 +984,7 @@ body .menu-section .menu-slider .inner-slider .slide .slider-inner.row{
 	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
-	        align-items: center;
+	        /* align-items: center; */
 	width: 100%;
     min-height: 450px;
 }
@@ -1155,7 +1155,7 @@ body .menu-section .menu-slider .inner-slider .slide .slider-inner .col-2 .slide
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	        transform: translate(-50%, -71%);
 }
 
 body .menu-section .menu-slider .inner-slider .slide .slider-inner .col-2 .slide-ingredients{
@@ -2028,13 +2028,13 @@ body .stores-section{
 }
 
 body .stores-section.section-loaded{
-	background: url(../../../uploads/2020/01/asset-12x.jpg) center/cover no-repeat;
+	background: url(../../../uploads/2019/12/pattern-2.png) center/cover no-repeat;
 }
 
 body .stores-section .store-heading h1{
 	display: block;
 	position: relative;
-	color: #ffdd24;
+	color: #fff;
 }
 
 body .stores-section:after{
@@ -2246,7 +2246,7 @@ body .store-selector .store-selector-row .col-2 .stores-content-list .store-item
 body .store-selector .store-selector-row .col-2 .stores-content-list .store-item .item-inner .para-text.booknow-text p a,
 body .store-selector .store-selector-row .col-2 .stores-content-list .store-item .item-inner .para-text.number-text.number-cta p a,
 body .store-selector .store-selector-row .col-2 .stores-content-list .store-item .item-inner .para-text.directions-text p a{
-	background: #ffdd24;
+	background: #11a3ba;
 	color: #fff;
 	text-transform: uppercase;
 	display: block;
@@ -2371,12 +2371,12 @@ body .store-selector .select-store-element:before{
 
 body .store-selector .select-store-element:after{
 	position: absolute;
-	content: 'Please select a city to find the nearest McDonald\'s store';
+	content: 'Please select a city to find the nearest Minus Grocery store';
 	top: -25px;
 	right: -255px;
 	font-size: 18px;
 	font-weight: 400;
-	background: #ffdd24;
+	background: #11a3ba;
 	color: #fff;
 	padding: 20px 25px;
 	line-height: 120%;
@@ -2455,6 +2455,7 @@ body .store-selector .select-store-element .select-inner.is-opened .select-other
 	        transform: scaleY(1);
 	opacity: 1;
 	pointer-events: all;
+	background-color: #11a3ba;
     -webkit-transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1),
                 -webkit-transform 0.4s 0.2s cubic-bezier(0.77, 0, 0.175, 1);
     transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1),
@@ -2509,14 +2510,14 @@ body .store-selector .select-store-element .select-inner .select-option:before{
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: #FFF;
+	background: #11a3ba;
 	-webkit-box-shadow: 0px 3px 60px rgba(0,0,0,0.06);
 	        box-shadow: 0px 3px 60px rgba(0,0,0,0.06);
 	z-index: -1;
 }
 
 body .store-selector .select-store-element .select-inner .select-option.active:before{
-    background: #fff;
+    background: #11a3ba;
 }
 
 body .store-selector .select-store-element .select-inner .select-option.option-active{
@@ -3474,7 +3475,7 @@ body .instagram-section .instagram-feed-shortcode .row-1 .col-1{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: calc(32% + 176px);
+	width: calc(32% + 123px);
 	background:  #11a3ba;
 	flex-wrap: wrap;
 }
@@ -3905,7 +3906,7 @@ body .happymeal-app-section .happymeal-app-row .cards-col .cards-row .card-text 
 
 	body p,
 	body .expanding-box{
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	body ul li,
@@ -3943,7 +3944,7 @@ body .happymeal-app-section .happymeal-app-row .cards-col .cards-row .card-text 
 
 	body .para-text p,
 	body #mk-footer .para-text p{
-		font-size: 18px;
+		font-size: 20px;
 	}
 
 	body .first-fold-section .main-heading h1{
