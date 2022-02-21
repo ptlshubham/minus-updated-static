@@ -1,7 +1,7 @@
 // custom.js - McDonald's
 
 function preload(arrayOfImages) {
-    jQuery(arrayOfImages).each(function () {
+    jQuery(arrayOfImages).each(function() {
         jQuery("<img/>")[0].src = this;
         // Alternatively you could use:
         // (new Image()).src = this;
@@ -14,7 +14,7 @@ preload([
     "https://mcdindia.com/wp-content/uploads/2022/01/img-makhani-burger-2.jpg",
 ]);
 
-var isScrolledIntoView = function (elem) {
+var isScrolledIntoView = function(elem) {
     var docViewTop = jQuery(window).scrollTop();
     var docViewBottom = docViewTop + jQuery(window).height();
     var elemTop = jQuery(elem).offset().top;
@@ -22,7 +22,7 @@ var isScrolledIntoView = function (elem) {
     return elemBottom <= docViewBottom && elemTop >= docViewTop;
 };
 
-var isScrolledIntoFullView = function (elem) {
+var isScrolledIntoFullView = function(elem) {
     var docViewTop = jQuery(window).scrollTop();
     var docViewBottom = docViewTop + jQuery(window).height();
     var elemTop = jQuery(elem).offset().top;
@@ -31,15 +31,16 @@ var isScrolledIntoFullView = function (elem) {
 };
 
 // Header Responsive Menu
-jQuery(function ($) {
+jQuery(function($) {
     $("body header.mk-header .mk-nav-responsive-link").prepend(
-        '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="45" viewBox="0 0 64 45"><g id="Group_430" data-name="Group 430" transform="translate(-338 620)"><path id="Path_5" data-name="Path 5" d="M402-596H370.5c-6.1,0-7.993,3-10.737,3-3.29,0-5.376-3-10.064-3-3.434,0-4.494,1.688-6.034,1.688-1.863,0-3.018-1.688-5.666-1.688" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/><path id="Path_3996" data-name="Path 3996" d="M341.852-585.471v1.8a7.2,7.2,0,0,0,7.2,7.2h39.6a7.2,7.2,0,0,0,7.2-7.2v-1.8" transform="translate(1.148 0.471)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/><path id="Path_3997" data-name="Path 3997" d="M396.756-605c-4.673-7.827-14.958-13.987-27-14s-22.328,6.173-27,14" transform="translate(0.244)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/></g></svg>'
+        '<svg viewBox="0 0 100 80" width="40" height="40"><rect width="100" height="12" style="fill:#fff;stroke-width:3;stroke:#fff"></rect><rect style="fill:#fff;stroke-width:3;stroke:#fff" y="30" width="100" height="12"></rect> <rect style="fill:#fff;stroke-width:3;stroke:#fff" y="60" width="100" height="12"></rect></svg>'
+        // '<svg xmlns="http://www.w3.org/2000/svg" width="64" height="45" viewBox="0 0 64 45"><g id="Group_430" data-name="Group 430" transform="translate(-338 620)"><path id="Path_5" data-name="Path 5" d="M402-596H370.5c-6.1,0-7.993,3-10.737,3-3.29,0-5.376-3-10.064-3-3.434,0-4.494,1.688-6.034,1.688-1.863,0-3.018-1.688-5.666-1.688" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/><path id="Path_3996" data-name="Path 3996" d="M341.852-585.471v1.8a7.2,7.2,0,0,0,7.2,7.2h39.6a7.2,7.2,0,0,0,7.2-7.2v-1.8" transform="translate(1.148 0.471)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/><path id="Path_3997" data-name="Path 3997" d="M396.756-605c-4.673-7.827-14.958-13.987-27-14s-22.328,6.173-27,14" transform="translate(0.244)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/></g></svg>'
     );
 });
 
 // Load Fast JS
-jQuery(function ($) {
-    $("body .mk-page-section").each(function () {
+jQuery(function($) {
+    $("body .mk-page-section").each(function() {
         var thisElem = $(this);
         // thisElem.addClass('section-loaded');
         // if (isScrolledIntoView(thisElem)) {
@@ -47,8 +48,8 @@ jQuery(function ($) {
         // }
     });
 
-    $(window).on("scroll", function () {
-        $("body .mk-page-section").each(function () {
+    $(window).on("scroll", function() {
+        $("body .mk-page-section").each(function() {
             var thisElem = $(this);
             if (isScrolledIntoView(thisElem)) {
                 thisElem.addClass("section-loaded");
@@ -58,9 +59,9 @@ jQuery(function ($) {
 });
 
 // Expanding Box js
-jQuery(function ($) {
-    $.fn.expandingBox = function () {
-        this.each(function () {
+jQuery(function($) {
+    $.fn.expandingBox = function() {
+        this.each(function() {
             var $this = $(this);
             $this.addClass("expanding-box");
             var $button = $("<a class='read-more'>").text("Read More");
@@ -69,7 +70,7 @@ jQuery(function ($) {
             $this.append($("<div class='fade'>"));
             var collapsedHeight = $this.data("collapsed-height") || 100;
             var originalHeight = $this.height();
-            $button.click(function () {
+            $button.click(function() {
                 if ($this.hasClass("collapsed")) {
                     expand();
                 } else {
@@ -82,12 +83,11 @@ jQuery(function ($) {
                 $this
                     .removeClass("expanded")
                     .addClass("collapsed")
-                    .animate(
-                        {
+                    .animate({
                             height: collapsedHeight,
                         },
                         "fast",
-                        function () {
+                        function() {
                             $button.text("Read More");
                         }
                     );
@@ -97,12 +97,11 @@ jQuery(function ($) {
                 $this
                     .removeClass("collapsed")
                     .addClass("expanded")
-                    .animate(
-                        {
+                    .animate({
                             height: originalHeight,
                         },
                         "fast",
-                        function () {
+                        function() {
                             $this.height("auto");
                             $button.text("Show Less");
                         }
@@ -114,13 +113,13 @@ jQuery(function ($) {
 });
 
 // Menu Slider JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($("body .menu-slider.slider-shortcode").length == 0) {
         return;
     }
 
     // Asign background-images to Slides
-    $(window).on("scroll", function () {
+    $(window).on("scroll", function() {
         var menuslidershortcode = $("body .menu-slider.slider-shortcode");
         if (isScrolledIntoView(menuslidershortcode)) {
             if (menuslidershortcode.hasClass("images-loaded")) {
@@ -129,7 +128,7 @@ jQuery(function ($) {
                 menuslidershortcode.addClass("images-loaded");
                 // Assign Background Images
                 $("body .menu-slider.slider-shortcode .slide-image").each(
-                    function () {
+                    function() {
                         var dataimagesrc = $(this).attr("data-image-src");
                         $(this).css(
                             "background-image",
@@ -146,7 +145,7 @@ jQuery(function ($) {
     (ms_totalslides = $(
         "body .first-menu-slider .slides-container .slide"
     ).length),
-        (ms_next = ms_first + 1);
+    (ms_next = ms_first + 1);
     ms_prev = ms_totalslides;
 
     function ms_nextVal(elem, totalSlides) {
@@ -189,7 +188,7 @@ jQuery(function ($) {
     $(".menu-slider .slide-size-selector .slide-size-options .slide-option").on(
         "click",
         "h2",
-        function (event) {
+        function(event) {
             event.preventDefault();
             var sizeOptionActive = $(this)
                 .closest(".slide-option")
@@ -215,7 +214,7 @@ jQuery(function ($) {
     $(".menu-slider.slider-shortcode .menu-slider-navigation").on(
         "click",
         ".navigation-item",
-        function () {
+        function() {
             var sliderActive = $(this).attr("data-sliderno");
             $("body .menu-slider.slider-shortcode .inner-slider").removeClass(
                 "active"
@@ -322,12 +321,12 @@ jQuery(function ($) {
     $("body .menu-slider.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-left",
-        function () {
+        function() {
             ms_first = parseInt(
                 $(this)
-                    .closest(".inner-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".inner-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             ms_totalslides = parseInt(
                 $(this).closest(".inner-slider").attr("data-total-slides")
@@ -342,7 +341,7 @@ jQuery(function ($) {
                     ".slides-container .slide.prevwait, .slide-nav-container .slide.prevwait"
                 )
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".menu-slider.slider-shortcode")
                     .find(
                         ".slides-container .slide.prevwait, .slide-nav-container .slide.prevwait"
@@ -355,12 +354,12 @@ jQuery(function ($) {
     $("body .menu-slider.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-right",
-        function () {
+        function() {
             ms_first = parseInt(
                 $(this)
-                    .closest(".inner-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".inner-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             ms_totalslides = parseInt(
                 $(this).closest(".inner-slider").attr("data-total-slides")
@@ -375,7 +374,7 @@ jQuery(function ($) {
                     ".slides-container .slide.nextwait, .slide-nav-container .slide.nextwait"
                 )
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".menu-slider.slider-shortcode")
                     .find(
                         ".slides-container .slide.nextwait, .slide-nav-container .slide.nextwait"
@@ -388,12 +387,12 @@ jQuery(function ($) {
     $(".menu-slider .inner-slider .slide-nav-container .slides-inner").on(
         "click",
         ".slide.prev",
-        function () {
+        function() {
             ms_first = parseInt(
                 $(this)
-                    .closest(".inner-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".inner-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             ms_totalslides = parseInt(
                 $(this).closest(".inner-slider").attr("data-total-slides")
@@ -408,7 +407,7 @@ jQuery(function ($) {
                     ".slides-container .slide.prevwait, .slide-nav-container .slide.prevwait"
                 )
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".menu-slider.slider-shortcode")
                     .find(
                         ".slides-container .slide.prevwait, .slide-nav-container .slide.prevwait"
@@ -421,12 +420,12 @@ jQuery(function ($) {
     $(".menu-slider .inner-slider .slide-nav-container .slides-inner").on(
         "click",
         ".slide.next",
-        function () {
+        function() {
             ms_first = parseInt(
                 $(this)
-                    .closest(".inner-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".inner-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             ms_totalslides = parseInt(
                 $(this).closest(".inner-slider").attr("data-total-slides")
@@ -441,7 +440,7 @@ jQuery(function ($) {
                     ".slides-container .slide.nextwait, .slide-nav-container .slide.nextwait"
                 )
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".menu-slider.slider-shortcode")
                     .find(
                         ".slides-container .slide.nextwait, .slide-nav-container .slide.nextwait"
@@ -451,8 +450,8 @@ jQuery(function ($) {
         }
     );
 
-    $(window).on("load", function () {
-        $("body .menu-slider.slider-shortcode .inner-slider").each(function () {
+    $(window).on("load", function() {
+        $("body .menu-slider.slider-shortcode .inner-slider").each(function() {
             var thisElem = $(this);
             var sliderTotalSlides = parseInt($(this).attr("data-total-slides"));
             ms_recalculatePos(sliderTotalSlides);
@@ -472,7 +471,7 @@ jQuery(function ($) {
                 .find(".slide-" + ms_nextwait)
                 .addClass("nextwait");
 
-            thisElem.find(".slides-container .slide").each(function () {
+            thisElem.find(".slides-container .slide").each(function() {
                 var slideheight = $(this).height();
                 $(this).attr("data-slideheight", slideheight);
             });
@@ -496,21 +495,21 @@ jQuery(function ($) {
 
     $(
         ".menu-section .menu-slider .inner-slider .slider-inner .col-2 .slide-ingredients"
-    ).each(function () {
+    ).each(function() {
         var thisElem = $(this);
         if (thisElem.find(".ingredients-text").html() == "") {
             thisElem.addClass("hidethis");
         }
     });
 
-    $('.menu-section .menu-slider .inner-slider .slider-inner .col-1 .slide-desc .slide-serving-info').each(function () {
+    $('.menu-section .menu-slider .inner-slider .slider-inner .col-1 .slide-desc .slide-serving-info').each(function() {
         var thisElem1 = $(this);
         if (thisElem1.find('.slide-serving-value').html() == '') {
             thisElem1.addClass('hidethis');
         }
     });
 
-    $('.menu-section .menu-slider .inner-slider .slider-inner .col-1 .slide-desc .slide-allergen-info').each(function () {
+    $('.menu-section .menu-slider .inner-slider .slider-inner .col-1 .slide-desc .slide-allergen-info').each(function() {
         var thisEl = $(this);
         if (thisEl.find('.slide-allergen-value').html() == '') {
             thisEl.addClass('hidethis');
@@ -520,13 +519,13 @@ jQuery(function ($) {
 });
 
 // McDelivery Slider JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($("body .mcdelivery-slider.slider-shortcode").length == 0) {
         return;
     }
 
     // Asign background-images to Slides
-    $(window).on("scroll", function () {
+    $(window).on("scroll", function() {
         var mcdeliveryslidershortcode = $(
             "body .mcdelivery-slider.slider-shortcode"
         );
@@ -537,7 +536,7 @@ jQuery(function ($) {
                 mcdeliveryslidershortcode.addClass("images-loaded");
                 // Assign Background Images
                 $("body .mcdelivery-slider.slider-shortcode .slide-image").each(
-                    function () {
+                    function() {
                         var dataimagesrc = $(this).attr("data-image-src");
                         $(this).css(
                             "background-image",
@@ -554,7 +553,7 @@ jQuery(function ($) {
     (md_totalslides = $(
         "body .mcdelivery-slider .slides-container .slide"
     ).length),
-        (md_next = md_first + 1);
+    (md_next = md_first + 1);
     md_prev = md_totalslides;
 
     function md_nextVal(elem) {
@@ -637,12 +636,12 @@ jQuery(function ($) {
     $("body .mcdelivery-slider.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-left",
-        function () {
+        function() {
             md_first = parseInt(
                 $(this)
-                    .closest(".mcdelivery-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".mcdelivery-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             md_first = md_prevVal(md_first);
             md_prevClick($(this));
@@ -652,7 +651,7 @@ jQuery(function ($) {
                 .closest(".mcdelivery-slider.slider-shortcode")
                 .find(".slides-container .slide.prevwait")
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".mcdelivery-slider.slider-shortcode")
                     .find(".slides-container .slide.prevwait")
                     .removeClass("remove-transition");
@@ -663,12 +662,12 @@ jQuery(function ($) {
     $("body .mcdelivery-slider.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-right",
-        function () {
+        function() {
             md_first = parseInt(
                 $(this)
-                    .closest(".mcdelivery-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".mcdelivery-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             md_first = md_nextVal(md_first);
             md_nextClick($(this));
@@ -678,7 +677,7 @@ jQuery(function ($) {
                 .closest(".mcdelivery-slider.slider-shortcode")
                 .find(".slides-container .slide.nextwait")
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".mcdelivery-slider.slider-shortcode")
                     .find(".slides-container .slide.nextwait")
                     .removeClass("remove-transition");
@@ -688,21 +687,21 @@ jQuery(function ($) {
 });
 
 // First Fold Slider Slider JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($("body .first-fold-slider.slider-shortcode").length == 0) {
         return;
     }
 
     // Assign Background Images
     $("body .first-fold-slider.slider-shortcode .slide-1 .slide-image").each(
-        function () {
+        function() {
             var dataimagesrc = $(this).attr("data-image-src");
             $(this).css("background-image", "url(" + dataimagesrc + ")");
         }
     );
 
     // On Hover load other images
-    $(".first-fold-slider.slider-shortcode").on("mouseenter", function () {
+    $(".first-fold-slider.slider-shortcode").on("mouseenter", function() {
         var ffslidershortcode = $("body .first-fold-slider.slider-shortcode");
         if (ffslidershortcode.hasClass("images-loaded")) {
             // do nothing
@@ -711,7 +710,7 @@ jQuery(function ($) {
 
             // Assign Background Images
             $("body .first-fold-slider.slider-shortcode .slide-image").each(
-                function () {
+                function() {
                     var dataimagesrc = $(this).attr("data-image-src");
                     $(this).css(
                         "background-image",
@@ -727,7 +726,7 @@ jQuery(function ($) {
     (ff_totalslides = $(
         "body .first-fold-slider .slides-container .slide"
     ).length),
-        (ff_next = ff_first + 1);
+    (ff_next = ff_first + 1);
     ff_prev = ff_totalslides;
 
     function ff_nextVal(elem) {
@@ -810,12 +809,12 @@ jQuery(function ($) {
     $("body .first-fold-slider.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-left",
-        function () {
+        function() {
             ff_first = parseInt(
                 $(this)
-                    .closest(".first-fold-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".first-fold-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             ff_first = ff_prevVal(ff_first);
             ff_prevClick($(this));
@@ -825,7 +824,7 @@ jQuery(function ($) {
                 .closest(".first-fold-slider.slider-shortcode")
                 .find(".slide-col .slide.prevwait")
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".first-fold-slider.slider-shortcode")
                     .find(".slide-col .slide.prevwait")
                     .removeClass("remove-transition");
@@ -836,12 +835,12 @@ jQuery(function ($) {
     $("body .first-fold-slider.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-right",
-        function () {
+        function() {
             ff_first = parseInt(
                 $(this)
-                    .closest(".first-fold-slider")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".first-fold-slider")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             ff_first = ff_nextVal(ff_first);
             ff_nextClick($(this));
@@ -851,7 +850,7 @@ jQuery(function ($) {
                 .closest(".first-fold-slider.slider-shortcode")
                 .find(".slide-col .slide.nextwait")
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".first-fold-slider.slider-shortcode")
                     .find(".slide-col .slide.nextwait")
                     .removeClass("remove-transition");
@@ -861,14 +860,14 @@ jQuery(function ($) {
 });
 
 // Store Selector JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($("body .store-selector").length == 0) {
         return;
     }
 
     var allcities = [];
 
-    $(".store-selector .stores-content-list .store-item").each(function () {
+    $(".store-selector .stores-content-list .store-item").each(function() {
         var thisElem = $(this);
         var cityname = thisElem.attr("data-city");
         if (allcities.indexOf(cityname) == -1) {
@@ -953,7 +952,7 @@ jQuery(function ($) {
         var activefilters = [];
         $(".store-filter-options")
             .find(".filter-option.filter-active")
-            .each(function () {
+            .each(function() {
                 var thisElem = $(this);
                 var storefilter = thisElem.attr("data-storetype");
                 if (activefilters.indexOf(storefilter) == -1) {
@@ -977,7 +976,7 @@ jQuery(function ($) {
             var currFilter = activefilters[i];
             $(
                 ".store-selector .stores-content-list .store-item.active-city"
-            ).each(function () {
+            ).each(function() {
                 var thisElem = $(this);
                 var storeTypeList = thisElem.attr("data-storetype");
                 if (storeTypeList.indexOf(currFilter) >= 0) {
@@ -998,7 +997,7 @@ jQuery(function ($) {
         );
 
         $(".store-selector .stores-content-list .store-item.active-city").each(
-            function () {
+            function() {
                 var thisElem = $(this);
                 if (elemno == 4) {
                     var childPos = thisElem.position().top;
@@ -1019,7 +1018,7 @@ jQuery(function ($) {
     function cityStoreTypeFilters() {
         var allstoretypes = [];
         $(".store-selector .stores-content-list .store-item.active-city").each(
-            function () {
+            function() {
                 var thisElem = $(this);
                 var storetype = thisElem.attr("data-storetype");
                 var storetypearray = storetype.split(",");
@@ -1061,7 +1060,7 @@ jQuery(function ($) {
     $("body .store-selector .select-store-element").on(
         "click",
         ".select-inner",
-        function () {
+        function() {
             $(this).toggleClass("is-opened");
         }
     );
@@ -1069,14 +1068,14 @@ jQuery(function ($) {
     $("body .store-selector .select-store-element .select-inner").on(
         "click",
         ".select-option",
-        function () {
+        function() {
             var clickedCity = $(this).attr("data-city");
             currentCityAssign(clickedCity);
             $(
                 ".store-selector .store-filters-element .store-filter-options"
             ).html("");
             cityStoreTypeFilters();
-            setTimeout(function () {
+            setTimeout(function() {
                 $(this).closest(".select-inner").removeClass("is-opened");
             }, 100);
         }
@@ -1086,7 +1085,7 @@ jQuery(function ($) {
     $("body .store-selector .store-filter-options").on(
         "click",
         ".filter-option p",
-        function (event) {
+        function(event) {
             var thisElem = $(this);
             thisElem.closest(".filter-option").toggleClass("filter-active");
             filterStoreType();
@@ -1094,7 +1093,7 @@ jQuery(function ($) {
         }
     );
 
-    $(".store-selector .stores-content-list .store-item").each(function () {
+    $(".store-selector .stores-content-list .store-item").each(function() {
         var thisElem = $(this);
         var dineStatus = thisElem
             .find(".store-status.dine-in-status .status-text")
@@ -1127,13 +1126,13 @@ jQuery(function ($) {
 });
 
 // Toys Slider Slider JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($("body .toys-slider-shortcode.slider-shortcode").length == 0) {
         return;
     }
 
     // Asign background-images to Slides
-    $(window).on("scroll", function () {
+    $(window).on("scroll", function() {
         var toyslidershortcode = $(
             "body .toys-slider-shortcode.slider-shortcode"
         );
@@ -1145,7 +1144,7 @@ jQuery(function ($) {
                 // Assign Background Images
                 $(
                     "body .toys-slider-shortcode.slider-shortcode .slide-image"
-                ).each(function () {
+                ).each(function() {
                     var dataimagesrc = $(this).attr("data-image-src");
                     $(this).css(
                         "background-image",
@@ -1161,7 +1160,7 @@ jQuery(function ($) {
     (toy_totalslides = $(
         "body .toys-slider-shortcode .slides-container .slide"
     ).length),
-        (toy_next = toy_first + 1);
+    (toy_next = toy_first + 1);
     toy_prev = toy_totalslides;
 
     function toy_nextVal(elem) {
@@ -1270,12 +1269,12 @@ jQuery(function ($) {
     $("body .toys-slider-shortcode.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-left",
-        function () {
+        function() {
             toy_first = parseInt(
                 $(this)
-                    .closest(".toys-slider-shortcode")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".toys-slider-shortcode")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             toy_first = toy_prevVal(toy_first);
             toy_prevClick($(this));
@@ -1285,7 +1284,7 @@ jQuery(function ($) {
                 .closest(".toys-slider-shortcode.slider-shortcode")
                 .find(".slides-container .slide.prev")
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".toys-slider-shortcode.slider-shortcode")
                     .find(".slides-container .slide.prev")
                     .removeClass("remove-transition");
@@ -1296,12 +1295,12 @@ jQuery(function ($) {
     $("body .toys-slider-shortcode.slider-shortcode .slide-nav-container").on(
         "click",
         ".nav-right",
-        function () {
+        function() {
             toy_first = parseInt(
                 $(this)
-                    .closest(".toys-slider-shortcode")
-                    .find(".slides-container .slide.first")
-                    .attr("data-slideno")
+                .closest(".toys-slider-shortcode")
+                .find(".slides-container .slide.first")
+                .attr("data-slideno")
             );
             toy_first = toy_nextVal(toy_first);
             toy_nextClick($(this));
@@ -1311,7 +1310,7 @@ jQuery(function ($) {
                 .closest(".toys-slider-shortcode.slider-shortcode")
                 .find(".slides-container .slide.nextwait3")
                 .addClass("remove-transition");
-            setTimeout(function () {
+            setTimeout(function() {
                 $(".toys-slider-shortcode.slider-shortcode")
                     .find(".slides-container .slide.nextwait3")
                     .removeClass("remove-transition");
@@ -1321,16 +1320,16 @@ jQuery(function ($) {
 });
 
 // Parallax Text effect
-(function ($) {
+(function($) {
     var elements = [];
     var windowHeight,
         windowScrollTop,
         isRunning = false;
 
-    $.fn.parallaxScrolling = function (options) {
+    $.fn.parallaxScrolling = function(options) {
         options = options || {};
         var move = options.move || 20;
-        this.each(function () {
+        this.each(function() {
             var $this = $(this);
             elements.push({
                 $: $this,
@@ -1344,7 +1343,7 @@ jQuery(function ($) {
 
     var $window = $(window);
     $window.on("resize orientationchange", recalculate);
-    $window.on("scroll", function () {
+    $window.on("scroll", function() {
         windowScrollTop = $window.scrollTop();
         resume();
     });
@@ -1438,7 +1437,7 @@ jQuery(function ($) {
     })();
 })(jQuery);
 
-jQuery(function ($) {
+jQuery(function($) {
     if ($(window).width() < 768) {
         return;
     }
@@ -1467,7 +1466,7 @@ jQuery(function ($) {
 });
 
 // Instagram Feed JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($('.instagram-feed-shortcode').length == 0) {
         return;
     }
@@ -1477,7 +1476,7 @@ jQuery(function ($) {
     function loadInstagramImages() {
         var imagecount = 1;
         var allinstagramimages = $('.api-shortcode').find('.insta-gallery-feed .insta-gallery-list .insta-gallery-item .insta-gallery-image-wrap');
-        allinstagramimages.each(function () {
+        allinstagramimages.each(function() {
             var thisElem = $(this);
             var imageLink = thisElem.find('.insta-gallery-link').attr('href');
             var imageSrc = thisElem.find('.insta-gallery-image').attr('src');
@@ -1496,7 +1495,7 @@ jQuery(function ($) {
         });
     }
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
         if (isScrolledIntoView(instagram_feed)) {
             if (instagram_feed.hasClass('loaded')) {
                 // do nothing
@@ -1520,13 +1519,13 @@ jQuery(function ($) {
 });
 
 // Happy Meal App JS
-jQuery(function ($) {
+jQuery(function($) {
     if ($("body .happymeal-app-shortcode").length == 0) {
         return;
     }
 
     // Asign background-images to Slides
-    $(window).on("scroll", function () {
+    $(window).on("scroll", function() {
         var happymealappshortcode = $("body .happymeal-app-shortcode");
         if (isScrolledIntoView(happymealappshortcode)) {
             if (happymealappshortcode.hasClass("video-loaded")) {
@@ -1548,12 +1547,3 @@ jQuery(function ($) {
         }
     });
 });
-
-console.log(
-    "%c MADE IN THE MOUNTAINS BY ",
-    "font-weight: bold; font-size: 24px;color: #151515;"
-);
-console.log(
-    "%c SIDDATWORK ",
-    "font-weight: bold; font-size: 50px;color: #151515;  border:5px solid #151515"
-);
