@@ -1404,6 +1404,3 @@ jQuery(function ($) {
         }
     });
 });
-
-console.log('%c MADE IN THE MOUNTAINS BY ', 'font-weight: bold; font-size: 24px;color: #151515;');
-console.log('%c SIDDATWORK ', 'font-weight: bold; font-size: 50px;color: #151515;  border:5px solid #151515');
