@@ -2349,6 +2349,7 @@ body .store-selector .select-store-element .select-inner{
 	height: 55px;
 	width: 100%;
 	cursor: pointer;
+	color: #fff;
 }
 
 body .store-selector .select-store-element{
@@ -2424,6 +2425,7 @@ body .store-selector .select-store-element .select-inner .select-other-options{
 	height: 202px;
 	overflow: hidden;
     overflow-y: scroll;
+	color: #11a3ba;
     padding-right: 5px;
     margin-top: 5px;
     -webkit-transform: scaleY(0);
@@ -2455,7 +2457,7 @@ body .store-selector .select-store-element .select-inner.is-opened .select-other
 	        transform: scaleY(1);
 	opacity: 1;
 	pointer-events: all;
-	background-color: #11a3ba;
+	background-color: #fff;
     -webkit-transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1),
                 -webkit-transform 0.4s 0.2s cubic-bezier(0.77, 0, 0.175, 1);
     transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1),
@@ -2510,14 +2512,14 @@ body .store-selector .select-store-element .select-inner .select-option:before{
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: #11a3ba;
+	background: #fff;
 	-webkit-box-shadow: 0px 3px 60px rgba(0,0,0,0.06);
 	        box-shadow: 0px 3px 60px rgba(0,0,0,0.06);
 	z-index: -1;
 }
 
 body .store-selector .select-store-element .select-inner .select-option.active:before{
-    background: #11a3ba;
+    background: #fff;
 }
 
 body .store-selector .select-store-element .select-inner .select-option.option-active{
