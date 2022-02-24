@@ -103,22 +103,23 @@ body #mk-theme-container .mk-header{
 }
 
 body #mk-theme-container .header-style-1 .menu-hover-style-5 .main-navigation-ul > li > a.menu-item-link{
-	color: #000000 !important;
+	color: #11a3ba !important;
 	font-size: 18px;
 	font-weight: 400;
 	letter-spacing: 0.5px;
 	text-transform: initial;
 	padding-left: 17px !important;
 	padding-right: 17px !important;
+	font-family: cursive;
 }
 
 body #mk-theme-container .transparent-header.header-style-1 .menu-hover-style-5 .main-navigation-ul > li > a.menu-item-link{
-	color: #000000 !important;
+	/* color: #000000 !important; */
 	/* 	text-shadow: 1px 1px 5px #000000; */
 }
 
 body.black-nav-menu #mk-theme-container .transparent-header.header-style-1 .menu-hover-style-5 .main-navigation-ul > li > a.menu-item-link{
-	color: #000000 !important;
+	/* color: #000000 !important; */
 }
 
 body #mk-theme-container .header-style-1 .menu-hover-style-5 .main-navigation-ul > li > a.menu-item-link:after{
@@ -148,7 +149,7 @@ body #mk-theme-container .mk-header.sticky-style-slide .mk-header-inner{
 /* Header Sticky CSS */
 
 body #mk-theme-container .header-style-1.a-sticky .menu-hover-style-5 .main-navigation-ul > li > a.menu-item-link{
-	color: #000000 !important;
+	color: #11a3ba !important;
 	text-shadow: none;
 }
 
@@ -2074,7 +2075,7 @@ body .store-selector .store-selector-row .col-1:after{
 }
 
 body .section-loaded .store-selector .store-selector-row .col-1:after{
-	background: url('../../../uploads/2020/02/happy-meal-celebration.svg') center center/contain no-repeat;
+	/* background: url('../../../uploads/2020/02/happy-meal-celebration.svg') center center/contain no-repeat; */
 }
 
 body .store-selector .store-selector-row .col-1 .note-text p{
@@ -2569,7 +2570,7 @@ body .stores-section .mk-page-section-inner:before{
 }
 
 body .stores-section .mk-page-section-inner:before{
-	background: url('../../../uploads/2020/02/stores-background.jpg') center/cover no-repeat;
+	/* background: url('../../../uploads/2020/02/stores-background.jpg') center/cover no-repeat; */
 }
 
 body .stores-section.city-selected .mk-page-section-inner:before{
