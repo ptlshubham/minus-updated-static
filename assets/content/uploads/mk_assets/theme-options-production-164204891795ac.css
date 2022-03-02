@@ -699,7 +699,12 @@ a:hover {
     }
 
     .mk-responsive-nav li ul li .megamenu-title:hover, .mk-responsive-nav li ul li .megamenu-title, .mk-responsive-nav li a, .mk-responsive-nav li ul li a:hover, .mk-responsive-nav .mk-nav-arrow {
-        color: #444444 !important;
+        /* color: #444444 !important; */
+        color: #11a3ba !important;
+		text-transform: initial;
+		padding-left: 17px !important;
+		padding-right: 17px !important;
+		font-family: cursive;
     }
 
     .mk-mega-icon {
