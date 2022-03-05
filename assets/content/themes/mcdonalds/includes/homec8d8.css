@@ -645,7 +645,7 @@ body.home-page .menu-section:before {
 }
 
 body.home-page.preloader-active .menu-section:before {
-    top: -20%;
+    /* top: -20%; */
     -webkit-transition: all 1s 0.7s cubic-bezier(.77, 0, .175, 1);
     -o-transition: all 1s 0.7s cubic-bezier(.77, 0, .175, 1);
     transition: all 1s 0.7s cubic-bezier(.77, 0, .175, 1);
@@ -5070,7 +5070,9 @@ body .happymeal-app-section .happymeal-app-row .cards-col .cards-row .card-text 
     }
     /* Happy Meal App Section CSS */
     body .happymeal-app-section .happymeal-app-row {
-        display: block;
+        /* display: block; */
+        display: grid;
+        ;
     }
     body .happymeal-app-section .happymeal-app-row .video-col,
     body .happymeal-app-section .happymeal-app-row .cards-col {
