@@ -45,7 +45,7 @@ jQuery(function ($) {
         // }
     });
 
-    $(window).on('scroll', function () {
+    $(window).on('load', function () {
         $('body .mk-page-section').each(function () {
             var thisElem = $(this);
             if (isScrolledIntoView(thisElem)) {

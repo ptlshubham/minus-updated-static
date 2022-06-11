@@ -704,7 +704,8 @@ a:hover {
 		text-transform: initial;
 		padding-left: 17px !important;
 		padding-right: 17px !important;
-		font-family: cursive;
+        /* font-family: 'bahamas'; */
+        
     }
 
     .mk-mega-icon {

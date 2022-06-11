@@ -2574,7 +2574,7 @@ only screen and (max-width:1140px) {
 }
 
 .header-style-1.header-align-left .mk-grid .mk-header-nav-container {
-    margin-right: -40px;
+    margin-right: -100px;
 }
 
 .header-style-1.header-align-left.boxed-header .mk-header-right {
